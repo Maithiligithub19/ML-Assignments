@@ -1,120 +1,76 @@
-# MentorBaba ML Projects
+# 🚀 Internship Assignments – Global Tech AI Internship 2025
 
-Two powerful machine learning applications built during MentorBaba Academy Global Internship Program
+This repository contains two AI/ML assignments completed during the **MentorBabaa Global Tech AI Internship 2025**:
 
----
-
-## 🎯 What I Built
-
-### 🩺 Health Risk Predictor
-Smart BMI prediction using lifestyle data
-- Input your sleep, steps, and calories
-- Get instant BMI prediction with 98% accuracy
-- Built with PyTorch neural networks
-
-### 📄 AI Resume Screener
-Intelligent job-resume matching system
-- Upload job description and resume
-- AI determines compatibility match
-- Powered by advanced NLP algorithms
+1. 🩺 **Health Risk Prediction (Mini Version)**  
+2. 🤖 **Smart Resume Screener**  
 
 ---
 
-## ⚡ Quick Results
-| Project           | Technology      | Accuracy   | Wow Factor                |
-|-------------------|----------------|------------|---------------------------|
-| Health Predictor  | scikit-learn   | 93%*      | Predicts BMI instantly    |
-| Resume Screener   | NLP + ML       | 75% F1-Score| Automates HR screening    |
+## 🩺 Assignment 1: Health Risk Prediction (Mini Version)
+
+### 🔹 Problem
+Predict **BMI** from lifestyle factors (Sleep Hours, Daily Steps, Calories Intake) and provide **health tips**.
+
+### 🔹 Approach
+- Dataset: 15 samples (Sleep, Steps, Calories, BMI)  
+- Standardized features using `StandardScaler`  
+- Built **Linear Regression Model in PyTorch**  
+- Evaluated with **MSE** and **R² Score**  
+- User can input lifestyle data → Predict BMI + Health Tip  
+
+### 🔹 Results
+- **Final Loss (MSE):** 0.2430  
+- **R² Score:** 0.9397 (~94% accuracy)  
+- **Prediction Example:**  
+  - Input → Sleep=7, Steps=7000, Calories=2200  
+  - Predicted BMI → 23.16  
+  - Health Tip → *Normal: Maintain your healthy lifestyle!*  
+
+### 🔹 Tech Stack
+`Python`, `Pandas`, `NumPy`, `Scikit-learn`, `PyTorch`, `Matplotlib`, `Seaborn`
 
 ---
 
-## 🛠️ Tech Stack
-🐍 Python 📊 Scikit-learn 📈 Pandas 🎨 Matplotlib 📝 Seaborn
+## 🤖 Assignment 2: Smart Resume Screener
+
+### 🔹 Problem
+Automatically check if a **resume matches a job description**.
+
+### 🔹 Approach
+- Dataset: 25 JD–Resume pairs (13 Match / 12 No Match)  
+- Text preprocessing with **TF-IDF Vectorizer**  
+- Trained **Logistic Regression classifier**  
+- Evaluated with Accuracy, Precision, Recall, F1-Score  
+- Identified **important features** influencing match  
+
+### 🔹 Results
+- **Accuracy:** 87.5%  
+- **Precision:** 1.00  
+- **Recall:** 0.75  
+- **F1-Score:** 0.8571  
+
+**Sample Predictions:**  
+- React JD vs React Resume → ✅ Match  
+- Data Scientist JD vs Chef Resume → ❌ Incorrect (Predicted Match)  
+- Backend JD vs Backend Resume → ✅ Match  
+
+### 🔹 Important Features
+- Positive → *engineer, aws, software, cloud, developer*  
+- Negative → *hr, wordpress, php, mysql*  
+
+### 🔹 Tech Stack
+`Python`, `Pandas`, `NumPy`, `Scikit-learn`, `Matplotlib`, `Seaborn`, `Streamlit` (optional)
 
 ---
 
-## 🚀 Try It Yourself
-
-### 1. Clone or Download
+## ⚡ How to Run
 ```bash
-git clone [your-repo-link]
-cd mentorbaba-ml-assignments
-```
+# Clone repo
+git clone <repo-link>
 
-### 2. Install Dependencies
-You can use the requirements file, or install directly:
-```bash
+# Install dependencies
 pip install -r requirements.txt
-# OR, if you want to install manually:
-pip install pandas numpy scikit-learn matplotlib seaborn
-```
 
-### 3. Run the Notebooks
-Open Jupyter and run the notebooks:
-```bash
+# Run Jupyter Notebook
 jupyter notebook
-# or
-jupyter lab
-```
-
-Open and run:
-- `Health_Risk_BMI_Prediction_uploadable.ipynb`
-- `Smart_Resume_Screener_uploadable.ipynb`
-
----
-
-## 🎯 Key Features
-- ✅ Real-world datasets - Practical, usable data
-- ✅ Production-ready code - Clean, documented, professional
-- ✅ Complete visualizations - Beautiful charts and graphs
-- ✅ Comprehensive evaluation - Detailed performance metrics
-- ✅ Easy to understand - Well-commented for learning
-
----
-
-## 🏆 Project Highlights
-### Health Predictor:
-- 15-sample realistic dataset
-- Neural network with ReLU activation
-- Perfect training curves and residual analysis
-- Real-time BMI prediction: 7h sleep + 7000 steps + 2200 cal = 23.80 BMI
-
-### Resume Screener:
-- TF-IDF text processing
-- Automated match scoring
-- Feature importance analysis
-- Smart keyword detection
-
----
-
-## 📁 Repository Structure
-```
-├── Health_Risk_BMI_Prediction_uploadable.ipynb   # Health prediction model
-├── Smart_Resume_Screener_uploadable.ipynb        # Resume screening model
-├── requirements.txt                # Dependencies
-└── README.md                       # Project documentation
-```
-
----
-
-## 🎓 What I Learned
-- 💡 Neural Networks - From theory to implementation
-- 💡 NLP Processing - Text to meaningful features
-- 💡 Model Evaluation - Comprehensive performance analysis
-- 💡 Data Visualization - Making insights clear and beautiful
-- 💡 Production Code - Writing clean, maintainable ML code
-
----
-
-## 🙏 Credits
-
-Built with ❤️ during MentorBaba Academy Global Internship Program
-Special thanks to Shubham Sir and the amazing mentoring team!
-
----
-
-⭐ Star this repo if you found it helpful!
-🔗 Connect with me on LinkedIn for more ML projects
-
-"From curiosity to code, from data to decisions" 🚀
-
