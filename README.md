@@ -8,6 +8,7 @@ This repository contains two AI/ML assignments completed during the **MentorBaba
 ---
 
 ## 🩺 Assignment 1: Health Risk Prediction (Mini Version)
+📂 **File:** `Health Risk Prediction (Mini Version).ipynb`
 
 ### 🔹 Problem
 Predict **BMI** from lifestyle factors (Sleep Hours, Daily Steps, Calories Intake) and provide **health tips**.
@@ -33,6 +34,7 @@ Predict **BMI** from lifestyle factors (Sleep Hours, Daily Steps, Calories Intak
 ---
 
 ## 🤖 Assignment 2: Smart Resume Screener
+📂 **File:** `Smart Resume Screener.ipynb`
 
 ### 🔹 Problem
 Automatically check if a **resume matches a job description**.
@@ -74,3 +76,4 @@ pip install -r requirements.txt
 
 # Run Jupyter Notebook
 jupyter notebook
+
