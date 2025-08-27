@@ -23,7 +23,7 @@ Intelligent job-resume matching system
 ## ⚡ Quick Results
 | Project           | Technology      | Accuracy   | Wow Factor                |
 |-------------------|----------------|------------|---------------------------|
-| Health Predictor  | scikit-learn   | ~98%*      | Predicts BMI instantly    |
+| Health Predictor  | scikit-learn   | 93%*      | Predicts BMI instantly    |
 | Resume Screener   | NLP + ML       | 75% F1-Score| Automates HR screening    |
 
 ---
@@ -117,3 +117,4 @@ Special thanks to Shubham Sir and the amazing mentoring team!
 🔗 Connect with me on LinkedIn for more ML projects
 
 "From curiosity to code, from data to decisions" 🚀
+
